@@ -17,6 +17,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1} 
+.clearfix {
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /* ------------------------------------------------------ */
 /* Reusable Components */
 /* ------------------------------------------------------ */
@@ -181,36 +189,110 @@ header {
 /* Shoes */
 /* ------------------------------------------------------ */
 
-.section-shoes {
+.section-shoes{
     padding: 0;
 }
-.shoe-photo {
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 80px;
-    align-items: center;
-    position: absolute;
-    left: 350px;
-    right:350px;  
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column{
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 50px;
+    overflow: hidden;
 
 }
 
-.shoe-photo img {
-    vertical-align: middle;    
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    max-width: 100%;
-    transform: scale(1.1);
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transform: scale(1.2);
+    transition: transform 0.5s;
 }
 
-.shoe-photo img:hover{
+.column img:hover {
     transform: scale(1.03);
 }
 
-.custom-size-img{
-    height: 80%;
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
+
+/* ------------------------------------------------------ */
+/* How it works */
+/* ------------------------------------------------------ */
+
+.steps-box {
+    
+    
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 110px;
+}
+
+.app-screen {
+   width: 40%; 
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 50px;
+}
+
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 6px;
+    float:left;
+    font-size: 150%;
+    margin-right: 25px;
+    margin-bottom: 10px; 
+}
+
+.works-step p {
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.works-step p {
+    margin-top: 
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
 
 
 /* ------------------------------------------------------ */
