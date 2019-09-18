@@ -143,6 +143,7 @@ header {
     transform: translate(-50%, -50%);
 }
 
+
 .welcome-text {
      text-align: center;
 }
@@ -193,12 +194,14 @@ header {
     padding: 0;
 }
 
-.row {
+.row-photos {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -299,6 +302,7 @@ header {
 /* Buttons */
 /* ------------------------------------------------------ */
 
+
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -308,6 +312,8 @@ header {
     border-radius: 200px;
     border: 1px solid #e67e22;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
+    
+
 }
 
 .btn-full:link,
@@ -319,7 +325,8 @@ header {
 
 .btn-ghost:link,
 .btn-ghost:visited{
-    color: #e67e22;    
+    color: #e67e22; 
+    margin-left: 
 }
 
 .btn:hover,
