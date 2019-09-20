@@ -133,6 +133,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .welcome-text-box {
@@ -237,9 +238,9 @@ header {
 /* How it works */
 /* ------------------------------------------------------ */
 
-.steps-box {
+.section-steps {
     
-    
+    background-color: #f5f5f5;
 }
 
 .steps-box:first-child {
@@ -284,10 +285,6 @@ header {
 .works-step p {
     padding-left: 100px;
     padding-top: 10px;
-}
-
-.works-step p {
-    margin-top: 
 }
 
 .btn-app img{
@@ -344,3 +341,50 @@ header {
     border: 1px solid #cf6d17; 
     color: #fff;
 }
+
+/* ------------------------------------------------------ */
+/* Quotes */
+/* ------------------------------------------------------ */
+
+.section-design-quotes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/3.jpg);
+    background-size:cover;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 150%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -3;
+
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    color:#e67e22;
+    font-size: 110%
+
+}
+.coco {
+    
+}
+
+
+
+    
+
