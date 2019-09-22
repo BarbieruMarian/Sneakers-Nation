@@ -349,6 +349,8 @@ header {
 .section-design-quotes{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/3.jpg);
     background-size:cover;
+    width: auto;
+    height: 550px;
     color:#fff;
     background-attachment: fixed;
 }
@@ -358,7 +360,8 @@ blockquote{
     font-style: italic;
     line-height: 150%;
     position: relative;
-    margin-top: 40px;
+    margin-top: 0px;
+    padding-top: 15px;
 }
 
 blockquote:before {
@@ -380,9 +383,34 @@ cite {
     font-size: 110%
 
 }
-.coco {
+.generic{
+
+    text-align: center;
     
 }
+.coco {
+    padding-top: 30px;
+    margin-top: -3px;
+}
+
+.steve {
+    padding-top: 30px;
+    margin-top: -3px;
+}
+
+.christian{
+    margin-top: -3px;
+}
+
+.quote-quotes{
+    margin-top: 50px;
+}
+
+.quote-title{
+    margin-top: 40px;
+}
+
+
 
 
 
