@@ -124,6 +124,18 @@ h3 {
     
 }
 
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    color:#e67e22;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
 /* ------------------------------------------------------ */
 /* Header */
 /* ------------------------------------------------------ */
@@ -134,6 +146,7 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+
 }
 
 .welcome-text-box {
@@ -409,6 +422,65 @@ cite {
 .quote-title{
     margin-top: 40px;
 }
+
+/* ------------------------------------------------------ */
+/* Plans */
+/* ------------------------------------------------------ */
+
+.section-plans{
+    background-color: #f5f5f5;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 7px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #f7f7f7
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #ededed
+}
+
+.plan-box div:first-child{
+    background-color: #fafafa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.third ul li:last-child {
+
+    padding-bottom: 8px;
+    padding-top: 25px;
+}
+
 
 
 
