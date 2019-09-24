@@ -23,10 +23,47 @@
         width: 80%;
         margin-left: 10%;
     }
+    
+    .steps-box{ margin-top: 2px;}
+    .steps-box:last-child{margin-top: 10px;}
+    .works-step{ margin-bottom: 40px; }
+    .works-step:last-of-type{margin-bottom: 60px; }
+    .app-screen{width: 50%;}
+    
+    .plan-box{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .plan-price{ font-size: 250%;}
+    
+    .contact-form{ width: 80%;}
+    
+    .main-nav {display: none;}
+    
+    
 }
 
 /* All phones smaller than the Ipad - from 481 to 767px */
 @media only screen and (max-width: 767px) {
+    body{ font-size:16px;}
+    section{ padding: 30px 0;}
+    
+    .row,
+    .welcome-text-box {padding: 0 4%; }
+    .col {width: 100%;}
+    .main-nav {display: none;}
+    
+    .long-copy {
+        width: 100%;
+        margin-left:0%;
+    }
+    
+    .works-step{ margin-bottom: 20px; }
+    .works-step:last-of-type{margin-bottom: 20px; }
+    
+    h1 { font-size: 180%;}
+    h2 {font-size: 150%;}
     
 }
 

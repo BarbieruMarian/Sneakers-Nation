@@ -8,16 +8,18 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
-.clearfix {zoom: 1} 
+.clearfix {zoom: 1}, 
 .clearfix {
     content: '.';
     clear:both;
@@ -229,7 +231,7 @@ header {
 }
 
 .column img {
-    margin-top: 8px;
+    margin-top: 2%;
     vertical-align: middle;
     transform: scale(1.2);
     transition: transform 0.5s;
@@ -259,12 +261,11 @@ header {
 .steps-box:first-child {
     text-align: right;
     padding: 3%;
-    margin-top: 30px;
 }
 
 .steps-box:last-child {
     padding-left: 3%;
-    margin-top: 110px;
+    margin-top: 70px;;
 }
 
 .app-screen {
@@ -272,13 +273,8 @@ header {
 }
 
 .works-step {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
-
-.works-step:last-of-type{
-    margin-bottom: 50px;
-}
-
 
 .works-step div {
     color: #e67e22;
@@ -304,6 +300,7 @@ header {
     height: 50px;
     width: auto;
     margin-right: 15px;
+    
 }
 
 /* ------------------------------------------------------ */
@@ -314,8 +311,7 @@ a:link,
 a:visited {
     color:#e67e22;
     text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;    
     transition: border-bottom 0.2s color 0.2s;
 }
 
@@ -397,7 +393,7 @@ blockquote{
     line-height: 150%;
     position: relative;
     margin-top: 0px;
-    padding-top: 15px;
+    padding-top: 3%;
 }
 
 blockquote:before {
@@ -406,10 +402,9 @@ blockquote:before {
     display: block;
     position: absolute;
     top: 0px;
-    left: -3;
+    left: -3px;
 
 }
-
 
 cite {
     font-size: 90%;
