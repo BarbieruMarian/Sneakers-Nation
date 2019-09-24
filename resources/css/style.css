@@ -459,7 +459,7 @@ cite {
     border-radius: 7px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0 2px 2px #f7f7f7
+    box-shadow: 0 2px 2px #f7f7f7;
 }
 
 .plan-box div{
@@ -498,11 +498,7 @@ cite {
     padding: 5px 0;
 }
 
-.third ul li:last-child {
 
-    padding-bottom: 8px;
-    padding-top: 25px;
-}
 
 /* ------------------------------------------------------ */
 /* Form*/

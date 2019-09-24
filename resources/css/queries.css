@@ -1,0 +1,36 @@
+
+
+/* Big tablet to widths smaller that the 1140px row - from 1023 to 1200px */
+@media only screen and (max-width: 1280px) {
+    
+    .welcome-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+        
+    .row { padding: 0 2%; }
+    
+
+}
+
+
+/* Small tablet to big tablet - from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    section {padding: 60px 0;}
+    
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* All phones smaller than the Ipad - from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    
+}
+
+/* Small phones - iphone5 - from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+}
