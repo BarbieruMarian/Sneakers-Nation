@@ -306,7 +306,24 @@ header {
     margin-right: 15px;
 }
 
+/* ------------------------------------------------------ */
+/* Links */
+/* ------------------------------------------------------ */
 
+a:link,
+a:visited {
+    color:#e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 
 /* ------------------------------------------------------ */
 /* Buttons */
@@ -518,5 +535,89 @@ input[type=checkbox] {
 *:focus{outline: none;}
 
 
+/* ------------------------------------------------------ */
+/* Footer */
+/* ------------------------------------------------------ */
+
+footer{
+    background-color: #333;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
     
+}
+
+
+.social-links{
+    list-style: none;
+    float: right;         
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a ion-icon {
+    color:#888;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color:#888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color:#e67e22;
+    
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 180%;
+}
+
+.facebook,
+.instagram,
+.google-plus,
+.twiter{
+    transition: color: 0.2s;
+}
+
+.facebook:hover{
+    color:#3b5998;
+}
+
+.instagram:hover{
+    color:#FD1D1D;
+}
+
+.google-plus:hover{
+    color:#dc4e41;
+}
+
+.twiter:hover{
+    color:#55acee;
+}
+footer p {
+    color:#888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
 
