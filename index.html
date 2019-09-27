@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">        
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
         
         <title>Sneakers Nation</title>
@@ -15,22 +16,24 @@
                 <nav>
                     <div class="row">
                         <img src="resources/img/logo/logo_transparent.png" alt="SneakersNation logo" class="logo">
+                        <div class="sticky-test">
                             <ul class="main-nav">
                                 <li><a href="#"> MEN</a></li>
                                 <li><a href="#"> Women</a></li>
                                 <li><a href="#"> Accesories</a></li>
                                 <li><a href="#"> Hot Deals</a></li>  
                             </ul>
+                        </div>
                     </div>
                 </nav>
                 <div class="welcome-text-box">
                     <h1 class="welcome-text"> Cool. Edgy. Fresh. <br> Best looking sneakers in town.   </h1>
-                    <a class="btn btn-full" href="#">Let's do this!</a>
-                    <a class="btn btn-ghost" href="#">Show me more</a>
+                    <a class="btn btn-full js--scroll-to-plans" href="#">Let's do this!</a>
+                    <a class="btn btn-ghost js--scroll-to-features" href="#">Show me more</a>
                 </div>
             </header>
             
-            <section class="section-features">
+            <section class="section-features js--section-features">
                 <div class="row">
                     
                     <h2>Fastest way to find your next dope sneakers pair</h2>
@@ -39,7 +42,7 @@
                     </p>
                 </div>
                 
-                <div class="row">
+                <div class="row js--wp-1">
                     
                     <div class="col span-1-of-4 box">
                         <ion-icon name="globe" class="icon-big"></ion-icon>
@@ -69,7 +72,7 @@
             
             </section >
             <section class="section-shoes">
-            <div class="row-photos">
+            <div class="row-photos js--wp--4">
                 <div class="column">
                     <img src="resources/img/shoes/3s.jpg" style="width: 100%">
                 </div>
@@ -90,7 +93,7 @@
                     <h2>How it works &mdash; Simple as 1, 2, 3</h2>
                 <div class="row">
                     <div class="col span-1-of-2 steps-box">
-                        <img src="resources/img/logo/app-iPhone-3.jpg" class="app-screen" alt="Iphone Logo">
+                        <img src="resources/img/logo/app-iPhone-3.jpg" class="app-screen js--wp-2" alt="Iphone Logo">
                     </div>
                     
                     <div class="col span-1-of-2 steps-box">
@@ -144,13 +147,13 @@
                 </div>
             </section>
             
-            <section class="section-plans"> 
+            <section class="section-plans js--section-plans"> 
                 <div class="row">
                     <h2>Keep in touch with the coolest trends</h2>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <div class="plan-box">
+                        <div class="plan-box js--wp-3">
                             <div>
                                 <h3>Premium</h3>
                                 <p class="plan-price">$7.99<span> /  month</span></p>
@@ -306,10 +309,22 @@
                 </div>
             </footer>
             
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js" integrity="sha256-btup0J8ailzC2SIkxIm9kZnW4IlDDKihhohGVN7Nfns=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha256-1eSvllkLdrfxD6G8RGF9h+mQuD93Af5+GdPBMNc7uMQ=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js" integrity="sha256-8fF/6nzuSprnSYGykwsQo6r9cT9FZAgN7yTl+4NCozg=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr.js" integrity="sha256-lqAKsAANK3BQhNWjvc+3widIyxQgq2oVq5zP15y/ywg=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
             
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
             
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="vendors/js/jquery.waypoints.min.js"></script>
+            <script src="resources/js/script.js"></script>
+            
+           
 
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         </body>
         
     </head>

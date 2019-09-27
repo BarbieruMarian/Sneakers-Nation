@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -143,6 +144,7 @@ h3 {
 /* ------------------------------------------------------ */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/firstv1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/firstv1.jpg);
     background-size: cover;
     background-position: center;
@@ -156,6 +158,7 @@ header {
     width: 1140px;
     top:45%;
     left:45%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -165,12 +168,16 @@ header {
 }
 
 .logo {
-    height:220px;
+    height:180px;
     width:auto;
     float:left;
     margin-top: 0px;
 
 }
+
+/* ------------------------------------------------------ */
+/* Main Nav */
+/* ------------------------------------------------------ */
 
 .main-nav {
     float:right;
@@ -192,6 +199,7 @@ header {
     text-transform: uppercase;
     font-size: 120%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
         
 }
@@ -199,6 +207,32 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/* ------------------------------------------------------ */
+/* Sticky Nav */
+/* ------------------------------------------------------ */
+
+.sticky {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 17px 0;
+    color:#555;      
+}
+
+.sticky .main-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 
@@ -212,6 +246,7 @@ header {
 
 .row-photos {
     display: -ms-flexbox; /* IE10 */
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
@@ -222,6 +257,7 @@ header {
 
 .column{
     -ms-flex: 33%; /* IE10 */
+    -webkit-box-flex: 33%;
     flex: 33%;
     max-width: 33%;
     padding: 0 50px;
@@ -232,17 +268,23 @@ header {
 .column img {
     margin-top: 2%;
     vertical-align: middle;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .column img:hover {
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 @media screen and (max-width: 600px) {
     .column {
         -ms-flex: 100%;
+        -webkit-box-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
@@ -313,6 +355,7 @@ a:visited {
     color:#e67e22;
     text-decoration: none;
     padding-bottom: 1px;    
+    -webkit-transition: border-bottom 0.2s color 0.2s;    
     transition: border-bottom 0.2s color 0.2s;
 }
 
@@ -336,6 +379,7 @@ input[type=submit]{
     text-decoration: none;    
     border-radius: 200px;
     border: 1px solid #e67e22;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
     
 
@@ -380,6 +424,7 @@ input[type = submit]{
 /* ------------------------------------------------------ */
 
 .section-design-quotes{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/3.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/3.jpg);
     background-size:cover;
     width: auto;
@@ -455,6 +500,7 @@ cite {
     border-radius: 7px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #f7f7f7;
     box-shadow: 0 2px 2px #f7f7f7;
 }
 
@@ -610,6 +656,22 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 20px;
+}
+
+/* ------------------------------------------------------ */
+/* Animations*/
+/* ------------------------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-4 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-4.animated {
+    opacity: 1;
 }
 
 
